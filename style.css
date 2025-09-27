@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ff9800;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background: #ff9800;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero span {
+  color: #333;
+}
+
+/* Sections */
+section {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #ff9800;
+}
+
+.project {
+  background: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project a {
+  color: #333;
+  text-decoration: underline;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
