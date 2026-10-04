@@ -1,74 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial=scale=1.0">
-        <title>Yash Vyas| Portfolio </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yash Vyas | Manual QA Engineer (Fresher)</title>
+<meta name="description" content="Yash Vyas, fresher Manual QA Engineer with a Salesforce background. Test design, defect reporting and requirement analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-    <!-- Navbar -->
-<header>
-    <nav>
-        <h2 class=""logo>Yash Vyas</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<!--Hero Section -->
-<section class="hero">
-    <h1>Hi, I'm <span>Yash Vyas</span></h1>
-    <p>MCA Student | Java Developer | Salesforce Enthusiast</p>
-  </section>
-
-  <!--About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm an MCA student passionate about software development, 
-      specializing in Java, Salesforce, and backend technologies. 
-      I love building projects that solve real-world problems.
-    </p>
-    </section>
-
-    <!--Skills-->
-    <section id="skills">
-    <h2>Skills</h2>
+<header class="site-header">
+  <nav>
+    <a class="logo" href="#top">Yash Vyas</a>
     <ul>
-      <li>Java, Spring Boot</li>
-      <li>MySQL, JDBC</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Git, GitHub</li>
-      <li>Salesforce (Admin + Dev basics)</li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>I test software the way users actually use it.</h1>
+      <p class="lead">Fresher Manual QA Engineer with a Salesforce background. I read requirements closely, design test cases that go beyond the happy path, and write defect reports a developer can act on.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="mailto:yashvyas525@gmail.com">Email me</a>
+      </div>
+      <p class="status">Open to Manual QA / Software Tester roles. MCA graduate, 2026.</p>
+    </div>
+
+    <article class="bug" aria-label="Sample defect report">
+      <header>
+        <p class="bug-meta">Defect from my e-commerce testing project</p>
+        <h2>Duplicate accounts created through case-sensitive emails</h2>
+        <p class="bug-module">Module: Registration</p>
+      </header>
+      <div class="tabs" role="tablist" aria-label="Defect report sections">
+        <button role="tab" aria-selected="true" aria-controls="panel-steps" id="tab-steps">Steps</button>
+        <button role="tab" aria-selected="false" aria-controls="panel-expected" id="tab-expected" tabindex="-1">Expected</button>
+        <button role="tab" aria-selected="false" aria-controls="panel-actual" id="tab-actual" tabindex="-1">Actual</button>
+      </div>
+      <div class="panel" id="panel-steps" role="tabpanel" aria-labelledby="tab-steps">
+        <ol>
+          <li>Register with <code>user@example.com</code>.</li>
+          <li>Log out and open the registration page again.</li>
+          <li>Register with <code>USER@example.com</code>.</li>
+        </ol>
+      </div>
+      <div class="panel" id="panel-expected" role="tabpanel" aria-labelledby="tab-expected" hidden>
+        <p>The second registration is rejected because the email already exists.</p>
+      </div>
+      <div class="panel" id="panel-actual" role="tabpanel" aria-labelledby="tab-actual" hidden>
+        <p>A second account is created. The same person now has two accounts.</p>
+      </div>
+      <p class="bug-note">Every report I write has steps, expected vs actual result, severity, priority and a screenshot.</p>
+    </article>
   </section>
-  <!-- Projects -->
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I started in Salesforce, building flows, validation rules, security models and reports. That taught me to ask how a system is supposed to behave and where it can fail. I'm now applying that mindset to manual testing.</p>
+    <p>I haven't worked in a company yet, so my practice comes from self-directed projects and learning. I'm looking for a team where I can learn from real projects and take ownership of the quality of what I test.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <div><dt>Testing</dt><dd>Black-box, functional, smoke and regression testing. Positive and negative testing.</dd></div>
+      <div><dt>Test design</dt><dd>Requirement analysis, test scenarios and cases, boundary value analysis, equivalence partitioning, error guessing, requirement traceability.</dd></div>
+      <div><dt>Process</dt><dd>SDLC, STLC, test execution, defect life cycle, defect reporting, severity and priority.</dd></div>
+      <div><dt>Tools</dt><dd>Chrome DevTools, Google Sheets, Git and GitHub.</dd></div>
+      <div><dt>Supporting</dt><dd>SQL basics for data checks, core Java basics, HTML and CSS.</dd></div>
+      <div><dt>Salesforce</dt><dd>Custom objects, validation rules, record-triggered and screen flows, reports and dashboards.</dd></div>
+    </dl>
+  </section>
+
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <h3> Music Player(Java) </h3>
-      <p>A console-based music player in Java with core java, implemented oop concepts.</p>
-      <a href= "https://github.com/yashuu1313/MusicPlayerProject ">View on GitHub</a>
-    </div>
+
+    <article class="project featured">
+      <h3>E-commerce Web Application Testing</h3>
+      <p class="tag">Manual QA</p>
+      <p>No requirements were published, so I wrote 28 of my own and mapped each of the 62 test cases to a requirement ID. I tested Login, Registration, Products, Reviews, Cart and Checkout with positive, negative and boundary cases, and reported 7 defects with steps, expected vs actual results, severity, priority and screenshots.</p>
+      <p class="tools">Google Sheets, GitHub, Chrome DevTools</p>
+      <a href="https://github.com/yashuu1313/ecommerce-project" target="_blank" rel="noopener">View test documentation on GitHub</a>
+    </article>
+
+    <article class="project">
+      <h3>Smart Business Operations &amp; Automation Hub</h3>
+      <p class="tag">Salesforce</p>
+      <p>Built custom data models with junction relationships, formula fields, validation rules and record-triggered flows. Configured screen flows and a role-based security model using OWD, role hierarchy and permission sets.</p>
+    </article>
+
+    <article class="project">
+      <h3>Console-based Music Player</h3>
+      <p class="tag">Core Java</p>
+      <p>A menu-driven console app in a 4-class design using encapsulation and abstraction. Playlist handling uses an ArrayList with add, view, play and next/previous navigation.</p>
+      <a href="https://github.com/yashuu1313/MusicPlayerProject" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
   </section>
 
-  <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="">yashvyas525@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/yashuu1313" target="_blank">github.com/yashu1313</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/yash-vyas-72b61b1a4/" target="_blank">linkedin.com/in/your-linkedin</a></p>
+    <p>Jaipur, Rajasthan. Happy to talk about Manual QA openings.</p>
+    <ul class="contact-list">
+      <li><a href="mailto:yashvyas525@gmail.com">yashvyas525@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/yash-vyas-72b61b1a4/" target="_blank" rel="noopener">linkedin.com/in/yash-vyas-72b61b1a4</a></li>
+      <li><a href="https://github.com/yashuu1313" target="_blank" rel="noopener">github.com/yashuu1313</a></li>
+    </ul>
   </section>
+</main>
 
-  <footer>
-    <p>© 2025 Yash Vyas</p>
-  </footer>
+<footer>
+  <p>&copy; 2026 Yash Vyas</p>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
